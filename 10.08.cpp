@@ -6,12 +6,24 @@ using namespace std;
 // Строки - string
 // Строки - это не притивный тип данных, а класс, который обеспечивает верхнеуровную работу с текстом
 
+const string LOGIN = "Nick", PASSWORD = "qweasdzxc123";
+
 int main()
 {
-	// Сравнение строк
-	string str1 = "qwe", str2 = "qwe";
-
-	if (str1 == str2) {
-		cout << "СТроки стравниваются по значения";
+	string login;
+	cout << "Enter login: "; cin >> login;
+	if (LOGIN == login) {
+		string password;
+		cout << "Enter password: "; cin >> password;
+		if (password == PASSWORD) {
+			cout << "Welcome\n";
+		}
+		else {
+			cout << "Error, password no correctly!\n";
+		}
 	}
+	else {
+		cout << "Error, '" << login << "' is not exisist\n";
+	}
+
 }
