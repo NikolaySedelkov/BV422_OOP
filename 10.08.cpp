@@ -8,17 +8,10 @@ using namespace std;
 
 int main()
 {
-	// Строки - это массивы символов, то можно применять индексацию
-	string str;
-	cout << "Enter word: "; cin >> str;
+	// Сравнение строк
+	string str1 = "qwe", str2 = "qwe";
 
-	cout << str[0] << ' ' << str[2] << ' ' << str[4] << endl;
-	// Можно проиндексироваться по всей строке, но для этого нужно знать её размер
-	// Для того, что бы узнать размер строки - используем метод 'size'
-
-	cout << "Length '" << str << "' = " << str.size() << endl;
-
-	for (int i = 0; i < str.size(); ++i) {
-		cout << "[" << i << "]:\t" << str[i] << endl;
+	if (str1 == str2) {
+		cout << "СТроки стравниваются по значения";
 	}
 }
